@@ -10,15 +10,15 @@
         </div>
         <div class="Content">
             <div class="row">
-                <img class="col-6" src="@/assets/imgs/image 2.png" alt="Second Page Image 1">
-                <img class="col-6" src="@/assets/imgs/image 3.png" alt="Second Page Image 2">
+                <img class="col-6" src="@/assets/imgs/image_2.png" alt="Second Page Image 1">
+                <img class="col-6" src="@/assets/imgs/image_3.png" alt="Second Page Image 2">
             </div>
             <div class="row" id="row1">
                 <center>
-                    <img class="col-3" src="@/assets/imgs/mobile-white-1.png" alt="mobile-white-1.png">
-                    <img class="col-3" src="@/assets/imgs/mobile-white-2.png" alt="mobile-white-2.png">
-                    <img class="col-3" src="@/assets/imgs/mobile-white-3.png" alt="mobile-white-3.png">
-                    <img class="col-3" src="@/assets/imgs/mobile-white-4.png" alt="mobile-white-4.png">
+                    <img class="col-3" src="@/assets/imgs/mobile_white_1.png" alt="mobile-white-1.png">
+                    <img class="col-3" src="@/assets/imgs/mobile_white_2.png" alt="mobile-white-2.png">
+                    <img class="col-3" src="@/assets/imgs/mobile_white_3.png" alt="mobile-white-3.png">
+                    <img class="col-3" src="@/assets/imgs/mobile_white_4.png" alt="mobile-white-4.png">
                 </center>
             </div>
             <div id="text1" style="font-size: 3.5rem; margin-top: 10rem;">A New Look</div>
@@ -26,9 +26,9 @@
             <div id="text1">Modernizing SOL’s visual identity with a refined aesthetic that balances Shinhan’s heritage with cutting-edge digital trends.</div>
             <div class="row" id="row2">
                 <center>
-                    <img class="col-4" src="@/assets/imgs/mobile-white-5.png" alt="mobile-white-5.png">
-                    <img class="col-4" src="@/assets/imgs/mobile-white-6.png" alt="mobile-white-6.png">
-                    <img class="col-4" src="@/assets/imgs/mobile-white-7.png" alt="mobile-white-7.png">
+                    <img class="col-4" src="@/assets/imgs/mobile_white_5.png" alt="mobile-white-5.png">
+                    <img class="col-4" src="@/assets/imgs/mobile_white_6.png" alt="mobile-white-6.png">
+                    <img class="col-4" src="@/assets/imgs/mobile_white_7.png" alt="mobile-white-7.png">
                 </center>
             </div>
         </div>

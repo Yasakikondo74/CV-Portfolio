@@ -4,7 +4,6 @@ import MainPage from '../components/MainPage.vue'
 import SecondPage from '../components/SecondPage.vue'
 
 const secondPageRef = ref(null)
-// States: 'hidden', 'visible', 'below'
 const revealState = ref('below') 
 
 onMounted(() => {

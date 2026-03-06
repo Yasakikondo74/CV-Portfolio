@@ -11,7 +11,7 @@
                     <li class="col-auto">• Mobile app</li>
                 </ul>
             </div>
-            <img style="width: 40%" src="@/assets/imgs/Mobile-white.png" alt="Mobile-white-2.png">
+            <img style="width: 40%" src="@/assets/imgs/mobile_white.png" alt="Mobile_white.png">
         </div>
         <div class="Content">
             <p id="text1" style="margin: 0% 29.5%" class="my-5 py-3">While <b>SOL Mobile Banking</b> has been a staple for Shinhan Bank customers, <b>version 2.0 faced several UX challenges.</b> This project marks a significant evolution: a full-scale <b>application revamp</b> that bridges the gap between robust security and intuitive design, <b>transforming user feedback</b> into a <b>high-performance banking experience.</b></p>
