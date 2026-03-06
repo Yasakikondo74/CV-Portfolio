@@ -45,21 +45,21 @@
 
 @font-face 
   font-family: 'Seriff-regular'
-  src: url('@/assets/fonts/Seriff/static/SourceSerif4-regular.ttf') format('truetype')
+  src: url('../assets/fonts/Seriff/static/SourceSerif4-regular.ttf') format('truetype')
   font-weight: 600
   font-style: normal
   font-display: swap
 
 @font-face 
   font-family: 'Seriff-bold'
-  src: url('@/assets/fonts/Seriff/static/SourceSerif4-Bold.ttf') format('truetype')
+  src: url('../assets/fonts/Seriff/static/SourceSerif4-Bold.ttf') format('truetype')
   font-weight: 700
   font-style: normal
   font-display: swap
 
 @font-face 
   font-family: 'Radio_Canada_Big-regular'
-  src: url('@/assets/fonts/Radio_Canada_Big/static/RadioCanadaBig-regular.ttf') format('truetype')
+  src: url('../assets/fonts/Radio_Canada_Big/static/RadioCanadaBig-regular.ttf') format('truetype')
   font-weight: 400
   font-style: normal
   font-display: swap
