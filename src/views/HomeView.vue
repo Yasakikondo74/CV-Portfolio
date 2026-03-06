@@ -1,75 +1,80 @@
 <script setup>
-import MainPage from '../components/Welcome.vue'
+import { ref, onMounted } from 'vue'
+import MainPage from '../components/MainPage.vue'
+import SecondPage from '../components/SecondPage.vue'
+
+const secondPageRef = ref(null)
+// States: 'hidden', 'visible', 'below'
+const revealState = ref('below') 
+
+onMounted(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const isEnteringFromBottom = entry.boundingClientRect.top > entry.rootBounds.top;
+      const isExitingToBottom = entry.boundingClientRect.top > entry.rootBounds.top;
+
+      if (entry.isIntersecting) {
+        revealState.value = 'visible'
+      } else {
+        if (isExitingToBottom) {
+          revealState.value = 'below'
+        } else {
+          revealState.value = 'visible' 
+        }
+      }
+    })
+  }, {
+    threshold: [0.0, 0.2] 
+  })
+
+  if (secondPageRef.value) {
+    observer.observe(secondPageRef.value.$el || secondPageRef.value)
+  }
+})
 </script>
 
 <template>
-  <main>
-    <div class="pt-3 row">
-      <div class="col-9">
-        <RouterLink id="HomeName" class="ms-4" to="/">Thu Hường</RouterLink>
-      </div>
-      <div class="col-3">
-        <RouterLink id="CV" to="/TheWelcome">CV</RouterLink>
-        &nbsp;&nbsp;
-        <select id="Project_List" class="form-options">
-          <option value="0">Project</option>
-          <option value="1">Project 1</option>
-          <option value="2">Project 2</option>
-          <option value="3">Project 3</option>
-          <option value="4">Project 4</option>
-        </select>
-        &nbsp;&nbsp;
-        <RouterLink id="Contact" to="/">Contact</RouterLink>
-      </div>
+  <main class="snap-wrapper">
+    <MainPage class="snap-section" />
+    
+    <div 
+      ref="secondPageRef" 
+      class="snap-section reveal-container"
+      :class="revealState" 
+    >
+      <SecondPage />
     </div>
-    <MainPage />
   </main>
 </template>
 
 <style lang="sass" scoped>
+.snap-wrapper
+  height: 100vh
+  overflow-y: auto
+  scroll-snap-type: y proximity
+  scroll-behavior: smooth
+  &::-webkit-scrollbar
+    display: none
+  scrollbar-width: none
+  -ms-overflow-style: none
 
-@font-face 
-  font-family: 'SpectralSC-SemiBold'
-  src: url('../assets/fonts/SpectralSC/SpectralSC-SemiBold.ttf') format('truetype')
-  font-weight: 600
-  font-style: normal
-  font-display: swap
+.snap-section
+  scroll-snap-align: start
+  min-height: 100vh 
+  width: 100%
+  overflow: visible 
 
-@font-face 
-  font-family: 'SFPRODISPLAY-regular'
-  src: url('../assets/fonts/SFPRODISPLAY/SFPRODISPLAYREGULAR.OTF') format('woff2')
-  font-weight: 600
-  font-style: normal
-  font-display: swap
+.reveal-container
+  opacity: 0
+  transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1), transform 1s cubic-bezier(0.22, 1, 0.36, 1)
+  pointer-events: none 
 
-#HomeName
-  font-family: 'SpectralSC-SemiBold'
-  font-size: 2rem
-  text-decoration: none
-  color: black
+  &.visible
+    opacity: 1
+    transform: translateY(0) 
+    pointer-events: auto 
 
-#HomeName:hover
-  font-family: 'SpectralSC-SemiBold'
-  color: cyan
-
-#CV
-  font-family: 'SFPRODISPLAY-regular'
-  font-size: 1.25rem
-  font-weight: 300
-  text-decoration: none
-  color: black
-
-#Project_List
-  font-family: 'SFPRODISPLAY-regular'
-  font-size: 1.25rem
-  text-decoration: none
-  color: white
-  background-color: black
-  padding: 0.1rem 0.25rem
-
-#Contact
-  font-family: 'SFPRODISPLAY-regular'
-  font-size: 1.25rem
-  text-decoration: none
-  color: black
+  &.below
+    opacity: 0
+    transform: translateY(100px) 
 </style>
