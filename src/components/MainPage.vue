@@ -11,12 +11,12 @@
                     <li class="col-auto">• Mobile app</li>
                 </ul>
             </div>
-            <img style="width: 40%" src="../assets/imgs/Mobile-white.png" alt="Mobile-white-2.png">
+            <img style="width: 40%" src="@/assets/imgs/Mobile-white.png" alt="Mobile-white-2.png">
         </div>
         <div class="Content">
             <p id="text1" style="margin: 0% 29.5%" class="my-5 py-3">While <b>SOL Mobile Banking</b> has been a staple for Shinhan Bank customers, <b>version 2.0 faced several UX challenges.</b> This project marks a significant evolution: a full-scale <b>application revamp</b> that bridges the gap between robust security and intuitive design, <b>transforming user feedback</b> into a <b>high-performance banking experience.</b></p>
             <h1 id="text2">The Approach</h1>
-            <img style="width: 65%;" src="../assets/imgs/table1.png" alt="table1.png">
+            <img style="width: 65%;" src="@/assets/imgs/table1.png" alt="table1.png">
         </div>
         <div id="Footer" class="row text-start mt-5">
             <div class="col-6 mb-4">
@@ -45,21 +45,21 @@
 
 @font-face 
   font-family: 'Seriff-regular'
-  src: url('../assets/fonts/Seriff/static/SourceSerif4-regular.ttf') format('truetype')
+  src: url('@/assets/fonts/Seriff/static/SourceSerif4-regular.ttf') format('truetype')
   font-weight: 600
   font-style: normal
   font-display: swap
 
 @font-face 
   font-family: 'Seriff-bold'
-  src: url('../assets/fonts/Seriff/static/SourceSerif4-Bold.ttf') format('truetype')
+  src: url('@/assets/fonts/Seriff/static/SourceSerif4-Bold.ttf') format('truetype')
   font-weight: 700
   font-style: normal
   font-display: swap
 
 @font-face 
   font-family: 'Radio_Canada_Big-regular'
-  src: url('../assets/fonts/Radio_Canada_Big/static/RadioCanadaBig-regular.ttf') format('truetype')
+  src: url('@/assets/fonts/Radio_Canada_Big/static/RadioCanadaBig-regular.ttf') format('truetype')
   font-weight: 400
   font-style: normal
   font-display: swap

@@ -45,14 +45,14 @@ html, body
 
 @font-face 
   font-family: 'SpectralSC-SemiBold'
-  src: url('../assets/fonts/SpectralSC/SpectralSC-SemiBold.ttf') format('truetype')
+  src: url('@/assets/fonts/SpectralSC/SpectralSC-SemiBold.ttf') format('truetype')
   font-weight: 600
   font-style: normal
   font-display: swap
 
 @font-face 
   font-family: 'SFPRODISPLAY-regular'
-  src: url('../assets/fonts/SFPRODISPLAY/SFPRODISPLAYREGULAR.OTF') format('woff2')
+  src: url('@/assets/fonts/SFPRODISPLAY/SFPRODISPLAYREGULAR.OTF') format('woff2')
   font-weight: 600
   font-style: normal
   font-display: swap
