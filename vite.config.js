@@ -10,9 +10,10 @@ export default defineConfig({
     vue(),
     // vueDevTools(),
   ],
+  base: '/Yasaki74/My-Portfolio/',
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
 })
