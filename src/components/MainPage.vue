@@ -1,6 +1,6 @@
 <template>
     <center>
-        <div class="Header" id="gradient-wrapper">
+        <div class="Header pt-5" id="gradient-wrapper">
             <div id="shinhan">Shinhan Sol 3.0</div>
             <div id="digital">digital mobile banking</div>
             <div id="text1" class="mt-2 mb-4">From UX audit to a localized design system, streamlining financial flows for the modern user.</div>
@@ -8,23 +8,25 @@
                 <ul class="row justify-content-center list-unstyled">
                     <li class="col-auto">• Banking</li>
                     &nbsp;&nbsp;
-                    <li class="col-auto">• Mobile app</li>
+                    <li class="col-auto"><RouterLink to="/Website" id="MobileAppLink">• Mobile app</RouterLink></li>
                 </ul>
             </div>
-            <img style="width: 40%" src="@/assets/imgs/mobile_white.png" alt="Mobile_white.png">
+            <img style="width: 25%" src="@/assets/imgs/mobile_white.png" alt="Mobile_white.png">
         </div>
         <div class="Content">
-            <p id="text1" style="margin: 0% 29.5%" class="my-5 py-3">While <b>SOL Mobile Banking</b> has been a staple for Shinhan Bank customers, <b>version 2.0 faced several UX challenges.</b> This project marks a significant evolution: a full-scale <b>application revamp</b> that bridges the gap between robust security and intuitive design, <b>transforming user feedback</b> into a <b>high-performance banking experience.</b></p>
+            <p id="text1" style="margin: 0% 35%" class="my-5 py-3">While <b>SOL Mobile Banking</b> has been a staple for Shinhan Bank customers, <b>version 2.0 faced several UX challenges.</b> This project marks a significant evolution: a full-scale <b>application revamp</b> that bridges the gap between robust security and intuitive design, <b>transforming user feedback</b> into a <b>high-performance banking experience.</b></p>
             <h1 id="text2">The Approach</h1>
-            <img style="width: 65%;" src="@/assets/imgs/table1.png" alt="table1.png">
+            <img style="width: 45%;" src="@/assets/imgs/table1.png" alt="table1.png">
         </div>
         <div id="Footer" class="row text-start mt-5">
             <div class="col-6 mb-4">
+                <hr>
                 <h4>1. Discovery</h4>
                 <p id="text1">Conducted UX/UI audits, stakeholder interviews, and user research</p>
-                <hr style="margin-top: 2.5rem;">
+                <hr style="margin-top: 2.3rem;">
             </div>
             <div class="col-6 mb-4">
+                <hr>
                 <h4>3. Solution</h4>
                 <p id="text1">Developed wireframes and prototypes through collaborative ideation. Adapted the Global Design System for the local market.</p>
                 <hr>
@@ -32,16 +34,32 @@
             <div class="col-6">
                 <h4>2. Define</h4>
                 <p id="text1">Optimized navigation by redefining sitemaps and user flows, translating complex requirements into a structured list of features and key screens.</p>
+                <hr>
             </div>
             <div class="col-6">
                 <h4>4. Testing</h4>
                 <p id="text1">Refined the user experience by conducting usability testing on final high-fidelity prototypes to validate key interactions</p>
+                <hr style="margin-top: 2.25rem;">
             </div>
         </div>
     </center>
 </template>
 
-<style lang="sass" scoped>
+<style lang="sass">
+
+#MobileAppLink
+  color: white
+  text-decoration: none
+
+#MobileAppLink:hover
+  color: gray
+
+#gradient-wrapper
+  background: linear-gradient(to bottom, #d6eaffff 0%, #ffffffff 15%),
+  background-repeat: no-repeat
+  background-position: center top
+  background-size: 100% 600vh
+//   min-height: 425vh
 
 @font-face 
   font-family: 'Seriff-regular'
@@ -65,7 +83,7 @@
   font-display: swap
 
 #Footer
-    margin: 0 17.5%
+    margin: 0 27.5%
     justify-content: start
     font-size: 0.85rem
 
@@ -86,13 +104,13 @@
     font-family: 'Radio_Canada_Big-regular'
     margin-top: -1.5rem
     letter-spacing: -5%
-    font-size: 3.6rem
+    font-size: 4.6rem
     color: black
 
 #shinhan
     font-family: 'Seriff-regular'
     letter-spacing: -4%
-    font-size: 3.5rem
+    font-size: 4.5rem
     color: black
 
 .col-auto

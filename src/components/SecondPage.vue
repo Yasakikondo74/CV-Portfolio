@@ -2,18 +2,20 @@
 </script>
 
 <template>
-    <center>
-        <div class="Header">
+    <center id="gradient-wrapper">
+        <div class="Header" >
             <div id="Discovery">Discovery</div>
             <div id="Decoding">Decoding User Needs</div>
             <div id="text1" style="margin-bottom: 2rem;">Analyzing the "Why" behind the "What" to ensure every design decision is backed by real-world user data</div>
         </div>
         <div class="Content">
-            <div class="row">
-                <img class="col-6" src="@/assets/imgs/image_2.png" alt="Second Page Image 1">
-                <img class="col-6" src="@/assets/imgs/image_3.png" alt="Second Page Image 2">
-            </div>
             <div class="row" id="row1">
+                <center>
+                    <img class="col-6" src="@/assets/imgs/image_2.png" alt="Second Page Image 1">
+                    <img class="col-6" src="@/assets/imgs/image_3.png" alt="Second Page Image 2">
+                </center>
+            </div>
+            <div class="row" id="row2">
                 <center>
                     <img class="col-3" src="@/assets/imgs/mobile_white_1.png" alt="mobile-white-1.png">
                     <img class="col-3" src="@/assets/imgs/mobile_white_2.png" alt="mobile-white-2.png">
@@ -21,10 +23,10 @@
                     <img class="col-3" src="@/assets/imgs/mobile_white_4.png" alt="mobile-white-4.png">
                 </center>
             </div>
-            <div id="text1" style="font-size: 3.5rem; margin-top: 10rem;">A New Look</div>
-            <div id="text2" style="font-size: 3.6rem; margin-top: -1.6rem;">For Modern Banking</div>
+            <div id="text1" style="font-size: 5rem; margin-top: 1rem;">A New Look</div>
+            <div id="text2" style="font-size: 5rem; margin-top: -1.6rem;">For Modern Banking</div>
             <div id="text1">Modernizing SOL’s visual identity with a refined aesthetic that balances Shinhan’s heritage with cutting-edge digital trends.</div>
-            <div class="row" id="row2">
+            <div class="row" id="row3">
                 <center>
                     <img class="col-4" src="@/assets/imgs/mobile_white_5.png" alt="mobile-white-5.png">
                     <img class="col-4" src="@/assets/imgs/mobile_white_6.png" alt="mobile-white-6.png">
@@ -36,7 +38,14 @@
     <br class="mb-5">
 </template>
 
-<style lang="sass" scoped>
+<style lang="sass">
+#gradient-wrapper
+  background: linear-gradient(to bottom, #d6eaffff 0%, #ffffff 15%)
+  background-repeat: no-repeat
+  background-position: center top
+  background-size:  100% 300vh
+  padding-top: 5%
+
 @font-face 
   font-family: 'Seriff-regular'
   src: url('../assets/fonts/Seriff/static/SourceSerif4-Regular.ttf') format('truetype')
@@ -52,12 +61,18 @@
   font-display: swap
 
 #row1
+    margin-top: 1rem
+    img
+        width: 35%
+        height: auto
+
+#row2
     margin-top: 10rem
     img
         width: 15%
         height: auto
 
-#row2
+#row3
     margin-top: 2rem
     img
         width: 15%
@@ -77,6 +92,7 @@
 #text1
     font-family: 'Seriff-regular'
     color: black
+    font-size: 1.25rem
 
 #text2
     font-family: 'Radio_Canada_Big-regular'

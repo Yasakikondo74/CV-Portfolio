@@ -1,6 +1,7 @@
 <script setup>
 import { useRouter } from 'vue-router'
 const router = useRouter()
+import ThirdPage from '../components/ThirdPage.vue'
 const handleNavigation = (event) => {
   const value = event.target.value
   
@@ -18,7 +19,7 @@ const handleNavigation = (event) => {
 </script>
 
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid" id="gradient-wrapper2">
     <div class="pt-3 row align-items-center">
       <div class="col-9">
         <RouterLink id="HomeName" class="ms-4" to="/">Thu Hường</RouterLink>
@@ -38,11 +39,38 @@ const handleNavigation = (event) => {
         <RouterLink id="Contact" to="/">Contact</RouterLink>
       </div>
     </div>
+    <ThirdPage />
   </div>
-  <h1>This is an about page</h1>
 </template>
 
 <style lang="sass">
+
+#gradient-wrapper2
+  background: linear-gradient(to bottom, #e0e3e8ff 0%, #ffffffff 15%),
+  background-repeat: no-repeat
+  background-position: center top
+  background-size: 100% 600vh
+
+@font-face 
+  font-family: 'Seriff-regular'
+  src: url('../assets/fonts/Seriff/static/SourceSerif4-regular.ttf') format('truetype')
+  font-weight: 600
+  font-style: normal
+  font-display: swap
+
+@font-face 
+  font-family: 'Seriff-bold'
+  src: url('../assets/fonts/Seriff/static/SourceSerif4-Bold.ttf') format('truetype')
+  font-weight: 700
+  font-style: normal
+  font-display: swap
+
+@font-face 
+  font-family: 'Radio_Canada_Big-regular'
+  src: url('../assets/fonts/Radio_Canada_Big/static/RadioCanadaBig-regular.ttf') format('truetype')
+  font-weight: 400
+  font-style: normal
+  font-display: swap
 
 @font-face 
   font-family: 'SpectralSC-SemiBold'
@@ -89,3 +117,4 @@ const handleNavigation = (event) => {
   text-decoration: none
   color: black
 </style>
+<!-- dee2e7 -->
